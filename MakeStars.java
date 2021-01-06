@@ -5,8 +5,11 @@ public class MakeStars{
     while(n.hasNextLine()){
       Scanner p = new Scanner(n.nextLine());
       while(p.hasNext()){
-        System.out.print(p.next());
-        System.out.print(" ");
+          int len = p.next().length();
+          for(int i = 0; i < len; i++){
+            System.out.print("*");
+          }
+          System.out.print(" ");
       }
       System.out.println("");
     }
